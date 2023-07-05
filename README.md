@@ -4,3 +4,47 @@
 Zdecydowałem się wziąć udział w wyzwaniu Dare IT Challenge, ponieważ aktualnie<br>pracuję jako tester manualny i chciałabym rozwijać się w tym kierunku.
 <br>Chciałabym również zwiększyś swoje umiejętności w temacie programowania.
 
+# Task 2: Selektory na stronie logowania.
+
+### SING IN BUTTON
+
+<li>//div/button <br></li>
+<li>//*[text()="Sign in"] <br></li>
+<li>//*[@id="__next"]/form/div/div[2]/button/span[1]</li>
+
+### Multi Input 
+
+//*[text()="English"]
+//*[text()="Polski"]
+//*[@id="__next"]/form/div/div[2]/div
+
+
+### LOGIN
+
+input[type="text"]
+//*[@id="login"]
+input[name="login"]
+
+### PASSWORD
+
+//*[@id="password"]
+input[type="password"]
+input[name="password"]
+
+### Scouts Panel
+
+//div/form/div/div/h5
+//h5
+//*[@id="__next"]/form/div/div[1]/h5
+
+
+### Remind Password
+
+//*[text()="Remind password"]
+//form/div/div/a
+//*[@id="__next"]/form/div/div[1]/a
+
+
+## Subtask 4
+
+
