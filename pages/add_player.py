@@ -4,6 +4,15 @@ from pages.base_page import BasePage
 
 
 class AddaPlayer(BasePage):
+    login_url = "https://scouts.futbolkolektyw.pl/en/"
+    login_field_xpath = "//*[@id='login']"
+    password_field_xpath = "//*[@id='password']"
+    sign_in_button_xpath = "//*[text()= 'Sign in']"
+    add_player_button_xpath = "//*[@id='__next']/div[1]/main/div[3]/div[2]/div/div/a/button/span[1]"
+    player_form_xpath = "//*[contains(@class,'MuiGrid-root')]"
+    player_form_url = "https://scouts.futbolkolektyw.pl/en/players/add"
+    expected_title = "Add player"
+    main_page_button_xpath = "//*[@id='__next']/div[1]/div/div/div/ul[1]/div[1]/div[2]/span"
     add_player = "//*[@id='__next']/div[1]/main/div[2]/form/div[1]/div/span"
     expected_text_xpath = "//*[text()='Add player']"
     email_field_add_player_xpath = "//*[@id='__next']/div[1]/main/div[2]/form/div[2]/div/div[1]/div/div/input"
@@ -32,15 +41,7 @@ class AddaPlayer(BasePage):
     clear_button_xpath = "//*[@id='__next']/div[1]/main/div[2]/form/div[3]/button[2]/span[1]"
     clear_text_button_xpath = "//*[text()='Clear']"
     required_text_xpath = "//*[text()='Required']"
-    login_url = "https://scouts.futbolkolektyw.pl/en/"
-    login_field_xpath = "//*[@id='login']"
-    password_field_xpath = "//*[@id='password']"
-    sign_in_button_xpath = "//*[text()= 'Sign in']"
-    add_player_button_xpath = "//*[@id='__next']/div[1]/main/div[3]/div[2]/div/div/a/button/span[1]"
-    player_form_xpath = "//*[contains(@class,'MuiGrid-root')]"
-    player_form_url = "https://scouts.futbolkolektyw.pl/en/players/add"
-    expected_title = "Add player"
-    main_page_button_xpath = "//*[@id='__next']/div[1]/div/div/div/ul[1]/div[1]/div[2]/span"
+
 
     def type_in_email(self, email):
         time.sleep(5)
