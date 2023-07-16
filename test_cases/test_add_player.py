@@ -5,6 +5,7 @@ from selenium import webdriver
 
 from pages.dashboard import Dashboard
 from pages.login_page import LoginPage
+from pages.add_player import AddaPlayer
 from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
 from selenium.webdriver.chrome.service import Service as ChromeService
 
@@ -20,15 +21,15 @@ class TestAddPlayer(unittest.TestCase):
         self.driver.fullscreen_window()
         self.driver.implicitly_wait(IMPLICITLY_WAIT)
 
-    def test_log_in_to_the_system(self):
+    def test_add_player(self):
         user_login = LoginPage(self.driver)
-        user_login.title_of_page()
         user_login.type_in_email('user01@getnada.com')
         user_login.type_in_password('Test-1234')
+        time.sleep(5)
         user_login.click_on_the_sing_in_button()
-        dashboard_page.title_of_page()
-        dashboard_page.click_on_the_add_player_button()
-        player = AddaPlayer(self.driver)
+        add_player = AddaPlayer(self.driver)
+        time.sleep(5)
+        add_player.click_on_add_player_button()
         time.sleep(5)
 
 
