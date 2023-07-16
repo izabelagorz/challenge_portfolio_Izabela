@@ -16,13 +16,12 @@ class Dashboard(BasePage):
     last_updated_match_xpath = "//h6[text()='Last updated match']/following-sibling::a"
     last_updated_report_xpath = "//h6[text()='Last updated report']/following-sibling::a"
     add_player_button_xpath = "//*[@id='__next']/div[1]/main/div[3]/div[2]/div/div/a/button/span[1]"
-
     futbol_kolektyw_button_xpath = '//*[@title="Logo Scouts Panel"]'
     expected_title = "Scouts panel"
     dashboard_url = "https://scouts-test.futbolkolektyw.pl/en"
 
     def title_of_page(self):
-        time.sleep(4)
+        time.sleep(5)
         assert self.get_page_title(self.dashboard_url) == self.expected_title
 
     def click_on_the_add_player_button(self):
