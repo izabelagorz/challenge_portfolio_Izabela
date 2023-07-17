@@ -9,6 +9,7 @@ from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
 from selenium.webdriver.chrome.service import Service as ChromeService
 
 
+
 class TestLoginPage(unittest.TestCase):
 
     @classmethod
