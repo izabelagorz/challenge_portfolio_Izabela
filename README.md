@@ -49,8 +49,9 @@ input[name="password"]
 
 ## Subtask 1 - Pisanie przypadków testowych
 
-## Subtask 3 
-
 https://docs.google.com/spreadsheets/d/1Lxk5zOsBdXMmfltHLvVdwyl7oh9XKI234xEBqYsGUdU/edit?usp=sharing
 
+## Subtask 3 
+
+https://drive.google.com/drive/folders/1620zpGKbiaVaqu4rSRmMVbeIZatr-iY6?usp=sharing
 
