@@ -45,6 +45,12 @@ input[name="password"]
 //*[@id="__next"]/form/div/div[1]/a
 
 
-## Subtask 4
+# Task 4
+
+## Subtask 1 - Pisanie przypadków testowych
+
+## Subtask 3 
+
+https://docs.google.com/spreadsheets/d/1Lxk5zOsBdXMmfltHLvVdwyl7oh9XKI234xEBqYsGUdU/edit?usp=sharing
 
 
