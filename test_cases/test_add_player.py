@@ -31,6 +31,24 @@ class TestAddPlayer(unittest.TestCase):
         time.sleep(5)
         add_player.click_on_add_player_button()
         time.sleep(5)
+        add_player.type_in_email('user123@gmail.com')
+        add_player.type_in_name('Iza')
+        add_player.type_in_surname('Górz')
+        add_player.type_in_phone('+48666254888')
+        add_player.type_in_weight('50')
+        add_player.type_in_height('164')
+        add_player.type_in_age('12122023')
+        add_player.type_in_club('Swój')
+        add_player.type_in_level('99')
+        add_player.type_in_main_position('Zawsze XD')
+        add_player.type_in_second_position('Nigdy hehe')
+        add_player.select_leg('Right leg')
+        add_player.type_in_laczy_nas_pilka('https://www.laczynaspilka.pl/strona-glowna')
+        add_player.type_in_minut('https://www.laczynaspilka.pl/strona-glowna')
+        add_player.type_in_facebook('https://www.laczynaspilka.pl/strona-glowna')
+        add_player.click_submit_button()
+        time.sleep(5)
+
 
 
 
