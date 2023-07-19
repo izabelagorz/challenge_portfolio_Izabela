@@ -17,15 +17,23 @@ class LoginPage(BasePage):
     change_language_button_xpath = "//div/span[text()='Polski']"
     expected_validation_info = "Identifier or password invalid."
     expected_validation_info_xpath = "//span[text()='Identifier or password invalid.']"
+    remind_password_button_xpath = "//div/a[text()='Remind password']"
+    remind_email_field_xpath = "//input"
 
     def type_in_email(self, email):
         self.field_send_keys(self.login_field_xpath, email)
+
+    def type_in_remind_email(self, email):
+        self.field_send_keys(self.remind_email_field_xpath, email)
 
     def type_in_password(self, password):
         self.field_send_keys(self.password_field_xpath, password)
 
     def click_on_the_sing_in_button(self):
         self.click_on_the_element(self.sign_in_button_xpath)
+
+    def click_on_send_button(self):
+        self.click_on_the_element(self.remind_email_field_xpath)
 
     def title_of_page(self):
         assert self.get_page_title(self.login_url) == self.expected_title
@@ -35,6 +43,9 @@ class LoginPage(BasePage):
 
     def click_on_change_language_button(self):
         self.click_on_the_element(self.change_language_button_xpath)
+
+    def click_on_remind_password_button(self):
+        self.click_on_the_element(self.remind_password_button_xpath)
 
     def comparing_text(self):
         time.sleep(3)
