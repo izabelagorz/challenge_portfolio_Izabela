@@ -13,6 +13,7 @@ class AddaPlayer(BasePage):
     expected_add_player_title = "Add player"
 
 
+
     player_form_url = "https://scouts.futbolkolektyw.pl/en/players/add"
     expected_title = "Add player"
     main_page_button_xpath = "//*[@id='__next']/div[1]/div/div/div/ul[1]/div[1]/div[2]/span"

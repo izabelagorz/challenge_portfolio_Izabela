@@ -23,6 +23,8 @@ class BasePage():
         return self.driver.title
 
 
+
+
     def assert_element_text(self, driver, xpath, expected_text):
         """Comparing expected text with observed value from web element
 
