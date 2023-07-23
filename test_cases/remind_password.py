@@ -11,7 +11,7 @@ from selenium.webdriver.common.by import By
 
 
 
-class TestLoginPageFailure(unittest.TestCase):
+class TestRemindPassword(unittest.TestCase):
 
     @classmethod
     def setUp(self):
