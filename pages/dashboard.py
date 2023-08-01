@@ -20,7 +20,7 @@ class Dashboard(BasePage):
     add_player_button_xpath = "//*[@id='__next']/div[1]/main/div[3]/div[2]/div/div/a/button/span[1]"
     futbol_kolektyw_button_xpath = '//*[@title="Logo Scouts Panel"]'
     expected_title = "Scouts panel"
-    dashboard_url = "https://scouts-test.futbolkolektyw.pl/en"
+    dashboard_url = "https://dareit.futbolkolektyw.pl/en"
 
     def title_of_page(self):
         self.wait_for_element_to_be_clicable(self.futbol_kolektyw_button_xpath)

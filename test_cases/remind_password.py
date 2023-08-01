@@ -18,7 +18,7 @@ class TestRemindPassword(unittest.TestCase):
         os.chmod(DRIVER_PATH, 755)
         self.chromeservice = ChromeService(executable_path=DRIVER_PATH)
         self.driver = webdriver.Chrome(service=self.chromeservice)
-        self.driver.get('https://scouts-test.futbolkolektyw.pl/en')
+        self.driver.get('https://dareit.futbolkolektyw.pl/en')
         self.driver.fullscreen_window()
         self.driver.implicitly_wait(IMPLICITLY_WAIT)
 
@@ -26,7 +26,7 @@ class TestRemindPassword(unittest.TestCase):
         user_login = LoginPage(self.driver)
         user_login.title_of_page()
         user_login.click_on_remind_password_button()
-        user_login.type_in_remind_email('user01@getnadacom')
+        user_login.type_in_remind_email('zacnieskadrowane@gmail.com')
         time.sleep(3)
         user_login.click_on_send_button()
         time.sleep(2)

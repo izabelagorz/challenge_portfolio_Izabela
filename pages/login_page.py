@@ -9,11 +9,11 @@ class LoginPage(BasePage):
     login_field_xpath = "//*[@id='login']"
     password_field_xpath = "//*[@id='password']"
     sign_in_button_xpath = "//*[text()='Sign in']"
-    login_url = 'https://scouts-test.futbolkolektyw.pl/en'
+    login_url = 'https://dareit.futbolkolektyw.pl/en'
     expected_title = "Scouts panel - sign in"
     title_of_box_xpath = "//*[@id='__next']/from/div/div[1]/h5"
     header_of_box = 'Scouts Panel'
-    sign_out_button_xpath = "//div/span[text()='Sign out']"
+    sign_out_button_xpath = "//div/span[text()='Logout']"
     change_language_button_xpath = "//div/span[text()='Polski']"
     expected_validation_info = "Identifier or password invalid."
     expected_validation_info_xpath = "//span[text()='Identifier or password invalid.']"
