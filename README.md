@@ -4,7 +4,7 @@
 Zdecydowałem się wziąć udział w wyzwaniu Dare IT Challenge, ponieważ aktualnie<br>pracuję jako tester manualny i chciałabym rozwijać się w tym kierunku.
 <br>Chciałabym również zwiększyś swoje umiejętności w temacie programowania.
 
-# Task 2: Selektory na stronie logowania.
+# Task 2: Przykładowe selektory na stronie logowania.
 
 ### SING IN BUTTON
 
