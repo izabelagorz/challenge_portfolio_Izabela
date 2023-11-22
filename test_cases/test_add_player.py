@@ -8,6 +8,7 @@ from pages.login_page import LoginPage
 from pages.add_player import AddaPlayer
 from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
 from selenium.webdriver.chrome.service import Service as ChromeService
+from webdriver_manager.chrome import ChromeDriverManager
 
 
 class TestAddPlayer(unittest.TestCase):
@@ -15,8 +16,7 @@ class TestAddPlayer(unittest.TestCase):
     @classmethod
     def setUp(self):
         os.chmod(DRIVER_PATH, 755)
-        self.chromeservice = ChromeService(executable_path=DRIVER_PATH)
-        self.driver = webdriver.Chrome(service=self.chromeservice)
+        self.driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
         self.driver.get('https://dareit.futbolkolektyw.pl/en')
         self.driver.fullscreen_window()
         self.driver.implicitly_wait(IMPLICITLY_WAIT)
@@ -43,9 +43,10 @@ class TestAddPlayer(unittest.TestCase):
         add_player.type_in_main_position('Zawsze')
         add_player.type_in_second_position('Nigdy')
         add_player.select_leg('Right leg')
+        time.sleep(5)
         add_player.type_in_laczy_nas_pilka('https://www.laczynaspilka.pl/strona-glowna')
         add_player.type_in_minut('https://www.laczynaspilka.pl/strona-glowna')
-        add_player.type_in_facebook('https://www.laczynaspilka.pl/strona-glowna')
+        time.sleep(5)
         add_player.click_submit_button()
         time.sleep(5)
 
