@@ -1,48 +1,8 @@
-# Task 1: Konfiguracja oprogramowania
+# ABOUT:
 
-### Subtask 1 👈 <p style="color:#F388CC; font-family: 'Open Sans', sans-serif;"> Dlaczego zdecydowałam się wziąć udział<br>w wyzwaniu Dare IT Challenge? </p>
-Zdecydowałem się wziąć udział w wyzwaniu Dare IT Challenge, ponieważ aktualnie<br>pracuję jako tester manualny i chciałabym rozwijać się w tym kierunku.
-<br>Chciałabym również zwiększyś swoje umiejętności w temacie programowania.
+I took on this project as part of a DareIT course challenge, diving into the world of automation for the first time. 
+I used Python and the Selenium framework to kick off my journey into automating things.
 
-# Task 2: Przykładowe selektory na stronie logowania.
-
-### SING IN BUTTON
-
-<li>//div/button <br></li>
-<li>//*[text()="Sign in"] <br></li>
-<li>//*[@id="__next"]/form/div/div[2]/button/span[1]</li>
-
-### Multi Input 
-
-//*[text()="English"]
-//*[text()="Polski"]
-//*[@id="__next"]/form/div/div[2]/div
-
-
-### LOGIN
-
-input[type="text"]
-//*[@id="login"]
-input[name="login"]
-
-### PASSWORD
-
-//*[@id="password"]
-input[type="password"]
-input[name="password"]
-
-### Scouts Panel
-
-//div/form/div/div/h5
-//h5
-//*[@id="__next"]/form/div/div[1]/h5
-
-
-### Remind Password
-
-//*[text()="Remind password"]
-//form/div/div/a
-//*[@id="__next"]/form/div/div[1]/a
 
 
 # Task 4
