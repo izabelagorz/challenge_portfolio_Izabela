@@ -3,7 +3,6 @@ import time
 import unittest
 from selenium import webdriver
 
-from pages.dashboard import Dashboard
 from pages.login_page import LoginPage
 from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
 from selenium.webdriver.chrome.service import Service as ChromeService
@@ -29,7 +28,6 @@ class TestRemindPassword(unittest.TestCase):
         time.sleep(3)
         user_login.click_on_send_button()
         time.sleep(2)
-
 
     @classmethod
     def tearDown(self):

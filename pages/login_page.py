@@ -1,10 +1,7 @@
 import time
-
-from selenium.webdriver.common.by import By
-
 from pages.base_page import BasePage
 
-
+"""LOKATORY"""
 class LoginPage(BasePage):
     LOGIN_FIELD_XPATH = "//*[@id='login']"
     PASSWORD_FIELD_XPATH = "//*[@id='password']"
@@ -51,19 +48,3 @@ class LoginPage(BasePage):
         time.sleep(3)
         self.assert_element_text(self.driver, self.EXPECTED_VALIDATION_INFO_XPATH, self.EXPECTED_VALIDATION_INFO)
 
-    # def assert_element_text(self, driver, xpath, expected_text):
-    #     element = driver.find_element(by=By.XPATH, xpath=self.expected_validation_info_xpath)
-    #     expected_validation_info = element.text
-    #     assert expected_text == expected_validation_info
-
-        # def assert_element_text(self, driver, xpath, expected_text):
-        #     """Comparing expected text with observed value from web element
-        #
-        #         :param driver: webdriver instance
-        #         :param xpath: xpath to element with text to be observed
-        #         :param expected_text: text what we expecting to be found
-        #         :return: None
-        #     """
-        #     element = driver.find_element(by=By.XPATH, value=xpath)
-        #     element_text = element.text
-        #     assert expected_text == element_text

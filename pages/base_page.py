@@ -22,9 +22,6 @@ class BasePage():
         self.driver.get(url)
         return self.driver.title
 
-
-
-
     def assert_element_text(self, driver, xpath, expected_text):
         """Comparing expected text with observed value from web element
 
@@ -37,12 +34,10 @@ class BasePage():
         element_text = element.text
         assert expected_text == element_text
 
-
     def wait_for_element_to_be_clicable(self, locator, locator_type=DEFAULT_LOCATOR_TYPE):
         wait = WebDriverWait(self.driver, 5)
         element = wait.until(EC.element_to_be_clickable((locator_type, locator)))
         time.sleep(3)
-
 
     def wait_for_element_to_be_clickable(self, locator, locator_type=DEFAULT_LOCATOR_TYPE):
         wait = WebDriverWait(self.driver, 10)

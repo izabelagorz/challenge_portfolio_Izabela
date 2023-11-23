@@ -4,7 +4,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 
 from pages.base_page import BasePage
 
-
+"""LOKATORY"""
 class Dashboard(BasePage):
     LOGIN_BUTTON_XPATH = "//*@id='login']"
     BUTTON_MAIN_PAGE_XPATH = "//div/span[text() = 'Strona główna' or text() ='Main page']"
