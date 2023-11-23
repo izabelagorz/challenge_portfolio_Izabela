@@ -1,11 +1,8 @@
-# ABOUT:
+### ABOUT:
 
 I took on this project as part of a DareIT course challenge, diving into the world of automation for the first time. 
 I used Python and the Selenium framework to kick off my journey into automating things.
 
-
-
-# Task 4
 
 ## Subtask 1 - Pisanie przypadków testowych
 
